@@ -5,9 +5,9 @@
     <title>Coursera WEb Development Learning </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="coursera">
-    <meta name="Author" content="Med Risasi">
+    <meta name="author" content="Med Risasi">
 
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -17,13 +17,67 @@
 
     <div class="container">
         <main>
+            <section>
+                <h2>Section 1</h2>
+                <p>
+                Specifically, there are three characters that should always be escaped to make sure they don't cause rendering issues, either right away or down the line. And these characters are the following. The < character, the > character and the &. Instead of using the < character, you should use the HTML entity which starts with & and then followed by lt;. So if you put in your HTML, &lt;, what the browser will interpret this as a < character. And similarly, for the > character, it's &gt;. And for the & it is &amp;. So let's take a look at some HTML to see this concept in action.
+                </p>
+                
+            </section>
+               
+
+
+             <section>
+                <h2>Section 2</h2>
+                <p>
+                Okay. So, here is our internal links page, and we have a couple of links. One it says linking to a file in the same directory, and the one is the DIV. That's the a tag surrounding the div tag that says DIV linking to a file in the same directory. And if we click that, we're going to go to this same-directory.html page which basically just provides a link back to our original page. What's interesting to note here is that the first link, linking to a file in the same directory, is clearly an inline tag since it's not forcing itself to go to a new line. But yet in the second case, div linking to a file in the same directory, we're surrounding the div tag with our a tag. So what's going on here? Are we using block level element, the div, inside an inline element? Well, turns out things are little bit more interesting. Let's take a look at the a tag as defined in the W3C specification. If you take a look closely, the a tag is both a flow content and a phrasing content. In other words, to map it back to the HTML four days, the a tag in the HTML5 is both an inline element and a block level element at the same time. And this is what allows us to take the a tag and surround a div tag inside of it. The authors of the HTML5 specification realized that there are a lot of times where you would like to be able to click on a whole region. And a most common occurrence of that is on when you have a logo or some sort of a company name in the top left corner for example, of your webpage. People expect to be able to click on that and be able to go to the front page of the company. Prior to HTML5, people had to use all kinds of tricks in order to achieve that effect because the a tag was only an inline tag, and you weren't really able to wrap the a tag around the div tag. 
+                </p>
+                 
+             </section>
+
+             <section>
+                <h2>Section 3</h2>
+                <p>
+                As you could see, this is the image that we included in our HTML. The interesting part here is that it appears as if it's another character within our text, which should right away tell you that an img tag is an inline element. If it weren't, the image would be on its own line, pushing everything behind it onto a new line. Next let's take a look at the other img tag and uncomment it so we could use it within our page. As you could see this is an external link pointing to some image on the web. Let's save the file and preview it in the browser again.    
+                Okay, so we're looking at the document called html-entities-before.html which is located in the examples Lectures08 folder. And this document contains a quote from one of the US presidents, Theodore Roosevelt, which happens to be one of my favorite quotes of his and a very weird looking h1 content. So we can take a look at it, it says don't be afraid to be <then a 100% success & >more;. So let's take a look at what this looks like in the browser. 
+                </p>
+             </section>
+              
+             <section>
+                <h2>Section 4</h2>
+                <p>
+                What's really neat about fragment identifiers is if you click on one and you have them in URL, you could copy and paste this URL and send it to a friend as a bookmark. And when they paste it into their browser, they will be taken to this page and jump straight to the section that was pointed to by the fragment identifier. Now I am on my local hard drive, and I'm not on a server so obviously sending this link that points to my local hard drive is not going to do any good. But if we're on a server, this link with the section identifier would have taken anybody anywhere, with a connection to the internet, to the proper page and to the proper section of that page. While fragment identifiers are very useful in order to jump to different parts of the same page, recently they have become even more important as they're used for navigation within the SPA or Single Page Applications. And SPA, Single Page Applications have become extremely popular. So knowing how fragment identifiers work is an important step towards being able to code single page applications. 
+                </p>
+             </section>
+
+             <section>
+                <h2>Section 5</h2>
+                <p>
+                Okay, so we're looking at images.html, which is located in the examples Lecture10 folder. And you may recognize this file from a few lectures ago where this is a famous quote from Theodore Roosevelt. And, by the way, I apologize, I made a typo before. Theodore Roosevelt is spelled with an E. So for you eagle eyes out there who noticed that I misspelled Theodore I apologize. It was just a typo. Anyway our task here is to display an image right before the quote itself. And we actually have a couple of images here. And since I wanted to start with one, let me comment this one out, and at the same time show you what an HTML comment looks like. And it's pretty simple, it starts with a less than bracket, exclamation point, dash, dash, and then it gets closed with a dash, dash, right angle bracket. And what will happen when you load this page into the browser Is that the browser will completely ignore this comment and will not render it. So let's take a look at the image tag that we wanted to discuss. The image is displayed in HTML using this img tag which is just short for image. And the src attribute of the img tag is a URL that points to some image file. Now this URL is no different than the href that you've seen with the regular link A tag. It could be a relative URL, or it can be an absolute URL, even one that contains an external link. Next, we specifiy the width and the height of the image. While not absolutely required, it's a really good idea to always specify the width and the height. And I will demonstrate to you in a few minutes why that is. And also the alt tag which is used by screen readers that help people with visual impairment. Let's save the document and take a look at it in the browser. 
+                </p>
+             </section>
+
+             <section>
+                <h2>Section 6</h2>
+                <p>
+                    
+                I mentioned before that on the web, content is king. It's all about content. And we spoke about the fact that HTML defines the structure of that content. So if all you wanted was raw content, you could take HTML files, upload them to a server, and you're done. However, that would be a huge mistake. Because while content is king, how users absorb and relate to that content largely depends on our experience of consuming the presentation of it. If there was a lot of noise around me and you could barely hear me, the content of the course would be the same, but the experience consuming the presentation of that content would be quite different. To use the house analogy, nobody likes to live in a house without nicely painted drywall covering installation and support beams. It's the difference between feeling sheltered from outside elements and feeling at home. The point I'm trying to make, is when it comes to a real world website, structure alone is just not enough. It's not good enough to just leave a scaffolding, a server side framework provided out of the box, to see the data. You need to style your content in a way that's pleasing and useful to the user. The use of color, positioning, size, among other things, is all part of that. Cascading style sheets, or CSS, is the technology that provides the styling capability. CSS is an incredibly powerful technology. It can take the same HTML structure and present it in such drastically different ways that you would never even guess that the underlying structure of the content are exactly the same ones. Let me show you a website that doesn't only illustrate this point, but should also amaze you as well. 
+
+                </p>
+             </section>
+            
+
+            
+           
+
+          
 
 
         </main>
     </div>
 
     <footer>
-        Made with ♥ @ Medi Risasi
+        Made with ♥ &copy; Medi Risasi
     </footer>
     <script src="js/app.js"></script>
 </body>
